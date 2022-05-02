@@ -3,13 +3,13 @@
 	int len, i, list[len], number_to_check;
 	char decision;
 	
-	do{                              // hehe recom ko na do-while yung gagamitin dito hehe. pero pwede pa namang magbago if may mas better hehe
+	do{                                          // hehe recom ko na do-while yung gagamitin dito hehe. pero pwede pa namang magbago if may mas better hehe
 		len = 0;
 		
 		printf("Enter a number: ");
 		scanf("%d", &len);
 		
-		for(i = 1; i <= len; i++){     // isa-isa pag-s-save ng digits?? 
+		for(i = 1; i <= len; i++){          // isa-isa pag-s-save ng digits?? 
 			printf("Number %d: ", i);
 			scanf("%d", &list[i]);
 		}
@@ -20,7 +20,9 @@
 		printf("Which of the following values would you like to know their position (in an organized manner)?:");
 		scanf("%d", &number_to_check);
 		
-		i = 0;
+		// checking the index of the number
+		
+		i = 0; 
 		
 		while(number_to_check != list[i]){
 			i++;
