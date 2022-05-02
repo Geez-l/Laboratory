@@ -9,7 +9,7 @@
 		printf("Enter a number: ");
 		scanf("%d", &len);
 		
-		for(i = 1; i <= len; i++){          // isa-isa pag-s-save ng digits?? 
+		for(i = 1; i <= len; i++){          // isa-isa pag-s-save ng digits?? p.s. naglagay muna ako ng temporary na pagsave sa array para marun ko hehe
 			printf("Number %d: ", i);
 			scanf("%d", &list[i]);
 		}
