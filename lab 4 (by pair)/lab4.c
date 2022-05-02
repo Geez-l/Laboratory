@@ -39,3 +39,5 @@
 	while(decision == 'y');
 	
 }
+
+// haha hindi pa rin ako sure kung tama ba pagkakaintindi ko sa gagawin HAHAHAHAKAMSDKMSDK PAYTING PA REN AHUEHUE
