@@ -1,17 +1,24 @@
 #include <stdio.h>
-
-	int len, i, list[len], number_to_check;
-	char decision;
+	
+	int inputMax[1000];
+	
+	int main(void){
+		int len, i, list[len], number_to_check;
+		char decision; 
+	
 	
 	do{                                          // hehe recom ko na do-while yung gagamitin dito hehe. pero pwede pa namang magbago if may mas better hehe
 		len = 0;
-		
-		printf("Enter a number: ");
+		printf("\t\t Greetings, dear user!");
+ 		printf("\n\t This program is about sorting and searching using: \n\t Selection Sort and Linear Search.\n");
+		printf("\nEnter number of elements in the array: ");
 		scanf("%d", &len);
 		
 		for(i = 1; i <= len; i++){          // isa-isa pag-s-save ng digits?? p.s. naglagay muna ako ng temporary na pagsave sa array para marun ko hehe
 			printf("Number %d: ", i);
 			scanf("%d", &list[i]);
+		
+		//selection sort implementation
 		}
 		
     // --------------------  ascending part ----------------------
