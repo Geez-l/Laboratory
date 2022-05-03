@@ -3,7 +3,7 @@
 	int inputMax[1000];
 	
 	int main(void){
-		int len, i, list[len], number_to_check;
+		int elements, len , i,j, list[len],arr, number_to_check;
 		char decision; 
 	
 	
@@ -11,15 +11,38 @@
 		len = 0;
 		printf("\t\t Greetings, dear user!");
  		printf("\n\t This program is about sorting and searching using: \n\t Selection Sort and Linear Search.\n");
-		printf("\nEnter number of elements in the array: ");
-		scanf("%d", &len);
 		
-		for(i = 1; i <= len; i++){          // isa-isa pag-s-save ng digits?? p.s. naglagay muna ako ng temporary na pagsave sa array para marun ko hehe
-			printf("Number %d: ", i);
-			scanf("%d", &list[i]);
+		printf("\nEnter desired number of elements in the array: ");
+		scanf("%d", &elements);
+		int array[elements];
+		
+		printf(" Enter elements: \n");
+		
+		for(i = 0, i < 0 ; i < elements; i++){
+		scanf("%d", array[i];
 		
 		//selection sort implementation
+		
+		for (i = 0; i < n; i++){
+			len = 1;
+			for (j = i+1 ; j < elements ; j++){
+				if (array[j] < array [len])
+				len = j;
+			}
+			if (len !=1){
+			}
+				arr = array[i]
+				array[i] = array[len]];
+				array [len] = arr;
+			}
 		}
+		  printf("Here is the sorted list of numbers: \n ");
+  		  for (i = 0 ; i < max ; i++)
+   		  printf("%d", array[i]);
+	}
+		
+			
+			
 		
     // --------------------  ascending part ----------------------
     
