@@ -3,7 +3,8 @@
 	int inputMax[1000];
 	
 	int main(void){
-		int elements, len , i,j, list[len],arr, number_to_check;
+		int i,j, list[max],arr, number_to_check;
+		int max, min;
 		char decision; 
 	
 	
@@ -13,29 +14,28 @@
  		printf("\n\t This program is about sorting and searching using: \n\t Selection Sort and Linear Search.\n");
 		
 		printf("\nEnter desired number of elements in the array: ");
-		scanf("%d", &elements);
-		int array[elements];
+		scanf("%d", &max);
+		int array[max];
 		
 		printf(" Enter elements: \n");
 		
-		for(i = 0, i < 0 ; i < elements; i++){
-		scanf("%d", array[i];
+		for(i = 0, i < max ; i++){
+		scanf("%d", array[i]);
 		
 		//selection sort implementation
 		
 		for (i = 0; i < n; i++){
-			len = 1;
-			for (j = i+1 ; j < elements ; j++){
-				if (array[j] < array [len])
-				len = j;
+			min = 1;
+			for (j = 1 ; j < max ; j++){
+				if (array[j] < array [min])
+				min = j;
 			}
-			if (len !=1){
-			}
+			if (min !=1){
 				arr = array[i]
-				array[i] = array[len]];
-				array [len] = arr;
+				array[i] = array[min]);
+				array [min] = arr;
 			}
-		}
+		  }
 		  printf("Here is the sorted list of numbers: \n ");
   		  for (i = 0 ; i < max ; i++)
    		  printf("%d", array[i]);
