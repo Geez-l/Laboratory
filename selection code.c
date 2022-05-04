@@ -7,10 +7,10 @@ int main(void){
   int i, j, position;
   int terminate = 1;
   
-  printf("--------------------------------------------------------------------------------------------");
+  printf("-----------------------------------------------------");
   printf("\n\t\t Greetings, dear user!");
   printf("\n This program is about sorting and searching using: \n Selection Sort and Linear Search.\n");
-  printf("---------------------------------------------------------------------------------------------");
+  printf("-----------------------------------------------------");
          
   
   printf("Enter the number of elements in the array: ");
@@ -20,8 +20,9 @@ int main(void){
  
    printf("Enter elements in the array:\n");
    for (i = 0; i < len ; i++)
-   printf(
    scanf("%d", &array[i]);
+     
+   
         
   //selection sort implementation
         
