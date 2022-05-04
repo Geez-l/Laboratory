@@ -1,23 +1,24 @@
 #include <stdio.h>
-	
-# define	
+		
 	int main(void){
 		int elements, array[1000], number_to_check;
 		int i, j, min, max, position; 
 		int decision; 
 	
 	
-	do{                                          // hehe recom ko na do-while yung gagamitin dito hehe. pero pwede pa namang magbago if may mas better hehe
+	do{                                          
 		printf("\t\t Greetings, dear user!");
- 		printf("\n\t This program perform sorting and searching using: Selection Sort and Linear Search.\n");
+ 		printf("\n\t\t This program perform sorting and searching using:\n\t Selection Sort and Linear Search.\n");
+		
 		printf("\nEnter number of elements in the array: ");
 		scanf("%d", &elements);
+		int array[elements];
 		
-		for(i = 1; i <= elements; i++){          // isa-isa pag-s-save ng digits?? p.s. naglagay muna ako ng temporary na pagsave sa array para marun ko hehe
+		for(i = 1; i <= elements; i++)        
 			printf("Number %d: ", i);
 			scanf("%d", &array[i]);
-		}
-		// selection sort implementation
+		
+		// selection sort implementation 
 		
 		for (i = 0 ; i < elements - 1 ; i++){
 			min = 1;
@@ -28,7 +29,7 @@
 		if (min != 1){
 			position = array[i];
 			array[i] = array[min];
-			array[min] = arr;
+			array[min] = position;
 		}
 	}
 	printf("Here is the sorted list in ascending manner: \n");
@@ -38,7 +39,7 @@
     // --------------------  ascending part ----------------------
     // linear search
     
-		printf("Which of the following values would you like to know their position (in an organized manner)?:");
+		printf("\n\nWhich of the following values would you like to know their position (in an organized manner)?:");
 		scanf("%d", &number_to_check);
 		
 		// checking the index of the number
@@ -60,6 +61,3 @@
 	while(decision == '1');
 	
 }
-
-// haha hindi pa rin ako sure kung tama ba pagkakaintindi ko sa gagawin HAHAHAHAKAMSDKMSDK PAYTING PA REN AHUEHUE
-// doon ako sa kabilang file mag start then compile nalang natin if ever na medj okay na parts natin. IDK na kung ano uunahin sa subs if discrete ba or lab
