@@ -1,9 +1,9 @@
 #include <stdio.h>
 	
-	int inputMax[1000];
 	
 	int main(void){
-		int elements, len, i, list[len], number_to_check;
+		int elements, len, list[len], number_to_check;
+		int i, j, min, max, array; 
 		char decision; 
 	
 	
@@ -18,6 +18,17 @@
 			printf("Number %d: ", i);
 			scanf("%d", &list[i]);
 		}
+		// selection sort implementation
+		
+		for (i = 0 ; i < elements - 1 ; i++){
+			min = 1;
+			for (j = 1 ; j < elements ; j++){
+				if list[j] < list [min])
+				min = j;
+		}
+		if (min != 1){
+			
+			
 		
     // --------------------  ascending part ----------------------
     
