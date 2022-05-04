@@ -2,21 +2,20 @@
 	
 	
 	int main(void){
-		int elements, len, list[len], number_to_check;
+		int elements, list[elements], number_to_check;
 		int i, j, min, max, array; 
 		char decision; 
 	
 	
-	do{                                          // hehe recom ko na do-while yung gagamitin dito hehe. pero pwede pa namang magbago if may mas better hehe
-		len = 0;
+	do{                                          
 		printf("\t\t Greetings, dear user!");
  		printf("\n\t This program is about sorting and searching using: \n\t Selection Sort and Linear Search.\n");
-		printf("\nEnter number of elements in the array: ");
+		printf("\nEnter number of elements in the array: ");     // ask user for input
 		scanf("%d", &elements);
 		
-		for(i = 1; i <= elements; i++){          // isa-isa pag-s-save ng digits?? p.s. naglagay muna ako ng temporary na pagsave sa array para marun ko hehe
+		for(i = 1; i <= elements; i++){                           
 			printf("Number %d: ", i);
-			scanf("%d", &list[i]);
+			scanf("%d", &list[i]);                           // save the inserted values of the user in an array.
 		}
 		// selection sort implementation
 		
@@ -28,31 +27,41 @@
 		}
 		if (min != 1){
 			
+    
+    		// Linear Search
 			
-		
-    // --------------------  ascending part ----------------------
-    
-    
-		printf("Which of the following values would you like to know their position (in an organized manner)?:");
+		printf("Which of the following values would you like to know their position (in an organized manner)?:");  // ask input from user
 		scanf("%d", &number_to_check);
 		
 		// checking the index of the number
-		
 		i = 0; 
-		
+	
 		while(number_to_check != list[i]){
 			i++;
 		}
 		
-		printf("The position of the value inserted is #%d \n", i);
-		printf("Would you like to continue using the program? \"y\" for yes and \"n\" for no: ");
-		scanf(" %c", &decision);
-		
-		if (decision != 'y'){
-			printf("Thank you for using this program!");
+		if (i > elements){
+			printf("Number you have inserted does not exist \n");
 		}
+		else{
+			printf("The position of the value inserted is #%d \n", i);   // print the index of the value given by user
+		}
+		
+		do{
+			printf("Would you like to continue using the program? \"y\" for yes and \"n\" for no: ");
+			scanf(" %c", &decision);
+			
+			if (decision == 'n'){
+				printf("Thank you for using the program!");  // end the program 
+			}
+			else if (decision != 'n' & decision != 'y'){
+				printf("You have inserted a wrong letter \n");
+			}
+			
+		} while (decision != 'n' & decision != 'y');  // give user a second chance if s/he inserted neither n nor y. 
+	
 	}
-	while(decision == 'y');
+	while(decision == 'y');  // the program will continue to run until the user wants to
 	
 }
 
