@@ -73,7 +73,7 @@ int main(void){
 			printf("Number you have inserted does not exist \n");
 		}
 		else{
-			printf("The position of the value inserted is #%d \n", i+1);   // print the index of the value
+			printf("The position of the value inserted is #%d \n", i+1);   // print the value of index
 		}
 			
 			do{
