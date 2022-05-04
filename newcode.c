@@ -23,13 +23,13 @@ int main(void){
 
   		int num, elements;
   		for (int num = 0 ;  num < length; num++){
-  			printf("\nElement No. :  %d", ++elements);
+  			printf("\nElement No. %d:"  , ++elements);
             		scanf("%d", &arr[i]);
   		}
   		printf("\nNumber of elements is %d", elements);
 
   		int j, position, temp, intput_max[1000];
-  		printf("\nSelection Sort Algorithm.");
+
 
   		for (int i = 0; i < (elements-1); i++){
   			position = i;
