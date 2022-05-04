@@ -23,8 +23,8 @@ int main(void){
 
   		int num, elements;
   		for (int num = 0 ;  num < length; num++){
-  			printf("\nElement No. :  %d", elements);
-            scanf("%d", &arr[i]);
+  			printf("\nElement No. :  %d", ++elements);
+            		scanf("%d", &arr[i]);
   		}
   		printf("\nNumber of elements is %d", elements);
 
