@@ -53,11 +53,11 @@ int main(void){
 		    }
 		}
 		
-		printf("\nSorted List:\n");
+		printf("\nSorted List:\n ") << ;
 		for (i = 0 ; i < max ; i++)
 		   printf("%d ", array[i]);
 			
-		printf("\n");	
+		printf(" >> ");	
 			
 			
 	    // Linear Search
