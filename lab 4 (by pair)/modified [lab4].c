@@ -35,9 +35,8 @@ int main(void){
      }
    }
    printf("Here is the sorted list of numbers in ascending manner: \n ");
-   for (i = 0 ; i < len ; i++)
-   printf("%d", array[i]);
-	
+   	for (i = 0 ; i < len ; i++)
+   	printf("%d", array[i]);
    return 0;
           
 }
