@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int input_max[1000];    //problem: can't access indiv array
+int input_max[1000];                                                   //problem: can't access indiv array
 
 int main(void){
 
