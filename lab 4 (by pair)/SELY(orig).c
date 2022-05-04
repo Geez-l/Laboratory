@@ -11,7 +11,7 @@ int main(void){
   	
 	do{                                                               // do while condition
 		do{
-			printf("\nEnter the number of elements in the array: ");
+			printf("\nEnter the number of elements in the array: ");  //prompts the user about the size of the array
 			scanf("%d", &max);
 			
 			// in case the user inserted a negative number
@@ -23,14 +23,14 @@ int main(void){
 		printf("Enter positive integers:\n");                           // ask for the value of elements in an array
 		      
 			     
-		for (i = 0; i < max ; i++){
+		for (i = 0; i < max ; i++){                                
 			printf("Number %d: ", i+1);
 			scanf("%d", &array[i]);
 			
 			    // when user inserted a negative value
 				while (array[i] < 0){
 					printf("You have inserted a negative number. \n");  
-					printf("Number %d: ", i+1);                 // ask user to input again
+					printf("Number %d: ", i+1);                 // ask user to input again until it reached the entered size of array
 					scanf("%d", &new_num);
 				array[i] = new_num;
 			}
@@ -42,14 +42,14 @@ int main(void){
 		for (i = 0 ; i < max - 1 ; i++){
 		    min = i;
 		    for (j = i + 1 ; j < max ; j++){
-		        if (array[j] < array[min])
+		        if (array[j] < array[min])   //comparing the value of the array element at index i and index j
 		        min = j;
 		    }
 		
 		    if (min != i){
 		        arr = array[i];
 		        array[i] = array [min];
-		        array [min] = arr;
+		        array [min] = arr;          // storing the variable in arr
 		    }
 		}
 		
