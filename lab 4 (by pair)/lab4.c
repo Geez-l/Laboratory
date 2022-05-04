@@ -3,7 +3,7 @@
 	
 	int main(void){
 		int elements, len, list[len], number_to_check;
-		int i, j, min, max, array; 
+		int i, j, min, max, arr; 
 		char decision; 
 	
 	
@@ -27,11 +27,17 @@
 				min = j;
 		}
 		if (min != 1){
-			
-			
-		
+			arr = list[i];
+			list[i] = list[min];
+			list[min] = arr;
+		}
+	}
+	printf("Here is the sorted list in ascending manner: \n");
+	for (i = o ; i < elements ; i++)
+	printf("%d", list[i]);
+	
     // --------------------  ascending part ----------------------
-    
+    // linear search
     
 		printf("Which of the following values would you like to know their position (in an organized manner)?:");
 		scanf("%d", &number_to_check);
