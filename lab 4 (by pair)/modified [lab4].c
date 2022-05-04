@@ -6,16 +6,35 @@ int main(void){
   int len, min;
   int i, j, position;
   int terminate = 1;
-  
+	
+ do{
 	printf("\n\n                       WELCOME!");
     	printf("\nThis program allows to sort and search given elements: \n    using Selection Sort and Linear Search Algorithms");
         printf("\n______________________________________________________________________"); 
 	
   	printf("\nEnter desired number of elements in the array: ");
   	scanf("%d", &len);
-  	int array[len];
-         
-  	printf("Enter elements in the array:\n");
+	while (len != 0){
+  		printf("\nEnter desired number of elements in the array: ");
+  		scanf("%d", &len);
+		
+		if (len > 0){
+  			printf("\nPlease enter %d chosen elements: ", len);
+         		break;	
+  		}
+  		else{
+  			if (len < 0){
+  				printf("\n Invalid input! Please try again.");
+  		}
+  			else{
+  				printf("\n No element was added.");
+  				break;
+  		}
+  	}
+
+  }
+  	printf(" \n\t\tSELECTION SORT");
+  	printf("\nEnter elements in the array:\n");
          
   	for (i = 0; i < len ; i++)
   	scanf("%d", &array[i]);
