@@ -8,7 +8,6 @@
 	
 	
 	do{                                          // hehe recom ko na do-while yung gagamitin dito hehe. pero pwede pa namang magbago if may mas better hehe
-		len = 0;
 		printf("\t\t Greetings, dear user!");
  		printf("\n\t This program is about sorting and searching using: \n\t Selection Sort and Linear Search.\n");
 		printf("\nEnter number of elements in the array: ");
