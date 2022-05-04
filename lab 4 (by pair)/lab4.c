@@ -2,7 +2,7 @@
 	
 	
 	int main(void){
-		int elements, len, list[len], number_to_check;
+		int elements, list[elements], number_to_check;
 		int i, j, min, max, arr; 
 		char decision; 
 	
@@ -23,7 +23,7 @@
 		for (i = 0 ; i < elements - 1 ; i++){
 			min = 1;
 			for (j = 1 ; j < elements ; j++){
-				if list[j] < list [min])
+				if (list[j] < list [min]);
 				min = j;
 		}
 		if (min != 1){
@@ -33,7 +33,7 @@
 		}
 	}
 	printf("Here is the sorted list in ascending manner: \n");
-	for (i = o ; i < elements ; i++)
+	for (i = 0 ; i < elements ; i++)
 	printf("%d", list[i]);
 	
     // --------------------  ascending part ----------------------
@@ -54,7 +54,7 @@
 		printf("Would you like to continue using the program? \"y\" for yes and \"n\" for no: ");
 		scanf(" %c", &decision);
 		
-		if (decision != 'y'){
+		if (decision != 'n'){
 			printf("Thank you for using this program!");
 		}
 	}
