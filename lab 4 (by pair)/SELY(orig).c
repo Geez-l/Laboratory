@@ -1,15 +1,15 @@
-#include <stdio.h>
+#include <stdio.h>  
 	
 int main(void){
-	int max, array[max], i, j, min, arr, new_num, number_to_check;
+	int max, array[max], i, j, min, arr, new_num, number_to_check;    //declared the variables
 	char decision; 
 	  
-	printf("-----------------------------------------------------");
+	printf("-----------------------------------------------------");  // improve readability of the program
   	printf("\n\t\t Greetings, dear user!");
   	printf("\n This program is about sorting and searching using: \n Selection Sort and Linear Search.\n");
   	printf("-----------------------------------------------------");
   	
-	do{
+	do{                                                               // do while condition
 		do{
 			printf("\nEnter the number of elements in the array: ");
 			scanf("%d", &max);
@@ -53,7 +53,7 @@ int main(void){
 		    }
 		}
 		
-		printf("\nSorted List:\n ") << ;
+		printf("\nSorted List:\n << ");     // displays numbers in ascending order
 		for (i = 0 ; i < max ; i++)
 		   printf("%d ", array[i]);
 			
