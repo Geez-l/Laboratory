@@ -1,17 +1,17 @@
-#include <stdio.h>  
+#include <stdio.h>
 	
 int main(void){
-	int max, array[max], i, j, min, arr, new_num, number_to_check;    //declared the variables
+	int max, array[max], i, j, min, arr, new_num, number_to_check;
 	char decision; 
 	  
-	printf("-----------------------------------------------------");  // improve readability of the program
+	printf("-----------------------------------------------------");
   	printf("\n\t\t Greetings, dear user!");
   	printf("\n This program is about sorting and searching using: \n Selection Sort and Linear Search.\n");
   	printf("-----------------------------------------------------");
   	
-	do{                                                               // do while condition
+	do{
 		do{
-			printf("\nEnter the number of elements in the array: ");  //prompts the user about the size of the array
+			printf("\nEnter the number of elements in the array: ");
 			scanf("%d", &max);
 			
 			// in case the user inserted a negative number
@@ -23,15 +23,15 @@ int main(void){
 		printf("Enter positive integers:\n");                           // ask for the value of elements in an array
 		      
 			     
-		for (i = 0; i < max ; i++){                                
+		for (i = 0; i < max ; i++){
 			printf("Number %d: ", i+1);
 			scanf("%d", &array[i]);
 			
 			    // when user inserted a negative value
 				while (array[i] < 0){
-					printf("You have inserted a negative number. \n");  
-					printf("Number %d: ", i+1);                 // ask user to input again until it reached the entered size of array
-					scanf("%d", &new_num);
+					printf("\nYou have inserted a negative number. \n");  
+					printf("Number %d: ", i+1);                 // ask user to input again
+					scanf("%d", &new_num);                     //  scanning and storing the variable 
 				array[i] = new_num;
 			}
 			}
@@ -42,22 +42,22 @@ int main(void){
 		for (i = 0 ; i < max - 1 ; i++){
 		    min = i;
 		    for (j = i + 1 ; j < max ; j++){
-		        if (array[j] < array[min])   //comparing the value of the array element at index i and index j
+		        if (array[j] < array[min])
 		        min = j;
 		    }
 		
 		    if (min != i){
 		        arr = array[i];
 		        array[i] = array [min];
-		        array [min] = arr;          // storing the variable in arr
+		        array [min] = arr;
 		    }
 		}
 		
-		printf("\nSorted List:\n << ");     // displays numbers in ascending order
+		printf("\nSorted List in Ascending Order:\n");
 		for (i = 0 ; i < max ; i++)
 		   printf("%d ", array[i]);
 			
-		printf(" >> ");	
+		printf("\n");	
 			
 			
 	    // Linear Search
@@ -72,8 +72,8 @@ int main(void){
 			i++;
 		}
 			
-		if (i > max){                              
-			printf("Number you have inserted does not exist \n");    // display error message for user's invalid input
+		if (i > max){
+			printf("Number you have inserted does not exist \n");
 		}
 		else{
 			printf("The index of the value inserted is %d \n", i);   // print the value of index
