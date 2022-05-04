@@ -72,8 +72,8 @@ int main(void){
 			i++;
 		}
 			
-		if (i > max){
-			printf("Number you have inserted does not exist \n");
+		if (i > max){                              
+			printf("Number you have inserted does not exist \n");    // display error message for user's invalid input
 		}
 		else{
 			printf("The index of the value inserted is %d \n", i);   // print the value of index
