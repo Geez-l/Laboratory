@@ -1,39 +1,39 @@
 #include <stdio.h>
 	
-	
+# define	
 	int main(void){
-		int elements, list[elements], number_to_check;
-		int i, j, min, max, arr; 
-		char decision; 
+		int elements, array[1000], number_to_check;
+		int i, j, min, max, position; 
+		int decision; 
 	
 	
 	do{                                          // hehe recom ko na do-while yung gagamitin dito hehe. pero pwede pa namang magbago if may mas better hehe
 		printf("\t\t Greetings, dear user!");
- 		printf("\n\t This program is about sorting and searching using: \n\t Selection Sort and Linear Search.\n");
+ 		printf("\n\t This program perform sorting and searching using: Selection Sort and Linear Search.\n");
 		printf("\nEnter number of elements in the array: ");
 		scanf("%d", &elements);
 		
 		for(i = 1; i <= elements; i++){          // isa-isa pag-s-save ng digits?? p.s. naglagay muna ako ng temporary na pagsave sa array para marun ko hehe
 			printf("Number %d: ", i);
-			scanf("%d", &list[i]);
+			scanf("%d", &array[i]);
 		}
 		// selection sort implementation
 		
 		for (i = 0 ; i < elements - 1 ; i++){
 			min = 1;
 			for (j = 1 ; j < elements ; j++){
-				if (list[j] < list [min]);
+				if (array[j] < array [min]);
 				min = j;
 		}
 		if (min != 1){
-			arr = list[i];
-			list[i] = list[min];
-			list[min] = arr;
+			position = array[i];
+			array[i] = array[min];
+			array[min] = arr;
 		}
 	}
 	printf("Here is the sorted list in ascending manner: \n");
 	for (i = 0 ; i < elements ; i++)
-	printf("%d", list[i]);
+	printf("%d", array[i]);
 	
     // --------------------  ascending part ----------------------
     // linear search
@@ -45,19 +45,19 @@
 		
 		i = 0; 
 		
-		while(number_to_check != list[i]){
+		while(number_to_check != array[i]){
 			i++;
 		}
 		
 		printf("The position of the value inserted is #%d \n", i);
-		printf("Would you like to continue using the program? \"y\" for yes and \"n\" for no: ");
-		scanf(" %c", &decision);
+		printf("Would you like to continue using the program? [1] for yes and [2] for no: ");
+		scanf(" %d", &decision);
 		
-		if (decision != 'n'){
+		if (decision != '1'){
 			printf("Thank you for using this program!");
 		}
 	}
-	while(decision == 'y');
+	while(decision == '1');
 	
 }
 
