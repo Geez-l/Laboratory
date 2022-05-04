@@ -12,15 +12,17 @@ int main(void){
   printf("\n This program is about sorting and searching using: \n Selection Sort and Linear Search.\n");
   printf("---------------------------------------------------------------------------------------------");
          
-  printf("Enter the number of elements in the array: ");
-  scanf("%d", &len);
-  int array[len];
   
-  if (len <1){
+  while (len !=0){
+  if (len > 1){
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &len);
+    int array[len];
+  }else{
     printf("Invalid input. Please try again!");
     break;
   }
-  else{
+ 
     printf("Enter elements in the array:\n");
     for (i = 0; i < len ; i++)
     printf(
