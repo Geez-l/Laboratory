@@ -4,9 +4,11 @@ int main(void){
 	int max, array[max], i, j, min, arr, selection = 0, new_num, position, number_to_check;
 	char decision; 
 	  
-	printf("Greetings, dear user!\n");
-	printf("\nThis program is about sorting and searching using: \nSelection Sort and Linear Search.\n");
-	
+	printf("-----------------------------------------------------");
+  	printf("\n\t\t Greetings, dear user!");
+  	printf("\n This program is about sorting and searching using: \n Selection Sort and Linear Search.\n");
+  	printf("-----------------------------------------------------");
+  	
 	do{
 		do{
 			printf("\nEnter the number of elements in the array: ");
@@ -22,12 +24,13 @@ int main(void){
 		      
 			     
 		for (i = 0; i < max ; i++){
+			printf("Number %d: ", i+1);
 			scanf("%d", &array[i]);
 			
 			    // when user inserted a negative value
 				while (array[i] < 0){
 					printf("You have inserted a negative number. \n");  
-					printf("Enter a positive integer!:\n");                 // ask user to input again
+					printf("Number %d: ", i+1);                 // ask user to input again
 					scanf("%d", &new_num);
 				array[i] = new_num;
 			}
@@ -50,7 +53,7 @@ int main(void){
 		    }
 		}
 		
-		printf("Here is the sorted list of numbers:\n");
+		printf("\nSorted List:\n");
 		for (i = 0 ; i < max ; i++)
 		   printf("%d ", array[i]);
 			
@@ -58,8 +61,8 @@ int main(void){
 			
 			
 	    // Linear Search
-				
-		printf("\nWhich of the following numbers would you like to know its position?:");  // ask input from user
+		printf("\nLinear Search:\n");		
+		printf("Which of the following numbers would you like to look for?:");  // ask input from user
 		scanf("%d", &number_to_check);
 			
 		// checking the index of the number
@@ -73,7 +76,7 @@ int main(void){
 			printf("Number you have inserted does not exist \n");
 		}
 		else{
-			printf("The position of the value inserted is #%d \n", i+1);   // print the value of index
+			printf("The index of the value inserted is %d \n", i);   // print the value of index
 		}
 			
 			do{
