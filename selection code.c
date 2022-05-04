@@ -13,20 +13,15 @@ int main(void){
   printf("---------------------------------------------------------------------------------------------");
          
   
-  while (len !=0){
-  if (len > 1){
-    printf("Enter the number of elements in the array: ");
-    scanf("%d", &len);
-    int array[len];
-  }else{
-    printf("Invalid input. Please try again!");
-    break;
-  }
+  printf("Enter the number of elements in the array: ");
+  scanf("%d", &len);
+  int array[len];
  
-    printf("Enter elements in the array:\n");
-    for (i = 0; i < len ; i++)
-    printf(
-    scanf("%d", &array[i]);
+ 
+   printf("Enter elements in the array:\n");
+   for (i = 0; i < len ; i++)
+   printf(
+   scanf("%d", &array[i]);
         
   //selection sort implementation
         
@@ -47,3 +42,5 @@ int main(void){
    printf("%d", array[i]);
    return 0;
 }
+
+         
