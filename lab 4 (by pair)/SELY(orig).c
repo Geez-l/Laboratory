@@ -1,7 +1,7 @@
 #include <stdio.h>
 	
 int main(void){
-	int max, array[max], i, j, min, arr, selection = 0, new_num, position, number_to_check;
+	int max, array[max], i, j, min, arr, new_num, number_to_check;
 	char decision; 
 	  
 	printf("-----------------------------------------------------");
