@@ -1,45 +1,52 @@
 #include <stdio.h>
-		
-	int main(void){
-		int elements, array[1000], number_to_check;
-		int i, j, min, max, position; 
-		int decision; 
+
+
+int main(void){
+  
+  int len, min;
+  int i, j, position;
+  int terminate = 1;
+  
+	printf("\n\n                       WELCOME!");
+    	printf("\nThis program allows to sort and search given elements: \n    using Selection Sort and Linear Search Algorithms");
+        printf("\n______________________________________________________________________"); 
 	
+  	printf("\nEnter desired number of elements in the array: ");
+  	scanf("%d", &len);
+  	int array[len];
+         
+  	printf("Enter elements in the array:\n");
+         
+  	for (i = 0; i < len ; i++)
+  	scanf("%d", &array[i]);
+        
+  //selection sort implementation
+        
+   	for (i = 0 ; i < len - 1 ; i++){
+      		min = 1;
+      		for (j =1 ; j < len ; j++){
+          	if (array[j] < array[min])
+          	min = j;
+      	}
+     	if (min != 1){
+          	position = array[i];
+          	array[i] = array [min];
+          	array [min] = position;
+     }
+   }
+   printf("Here is the sorted list of numbers in ascending manner: \n ");
+   for (i = 0 ; i < len ; i++)
+   printf("%d", array[i]);
 	
-	do{                                          
-		printf("\t\t Greetings, dear user!");
- 		printf("\n\t\t This program perform sorting and searching using:\n\t Selection Sort and Linear Search.\n");
-		
-		printf("\nEnter number of elements in the array: ");
-		scanf("%d", &elements);
-		int array[elements];
-		
-		for(i = 1; i <= elements; i++)        
-			printf("Number %d: ", i);
-			scanf("%d", &array[i]);
-		
-		// selection sort implementation 
-		
-		for (i = 0 ; i < elements - 1 ; i++){
-			min = 1;
-			for (j = 1 ; j < elements ; j++){
-				if (array[j] < array [min]);
-				min = j;
-		}
-		if (min != 1){
-			position = array[i];
-			array[i] = array[min];
-			array[min] = position;
-		}
-	}
-	printf("Here is the sorted list in ascending manner: \n");
-	for (i = 0 ; i < elements ; i++)
-	printf("%d", array[i]);
+   return 0;
+          
+}
+   
 	
     // --------------------  ascending part ----------------------
     // linear search
     
-		printf("\n\nWhich of the following values would you like to know their position (in an organized manner)?:");
+	/*	printf("\n\nWhich of the following values would you like to know their position (in an organized manner)?:");
 		scanf("%d", &number_to_check);
 		
 		// checking the index of the number
@@ -58,6 +65,7 @@
 			printf("Thank you for using this program!");
 		}
 	}
-	while(decision == '1');
+	while(decision == '1'); 
 	
+return 0;
 }
