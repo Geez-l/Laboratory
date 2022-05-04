@@ -14,7 +14,7 @@ int main(void){
 			
 			// in case the user inserted a negative number
 			if(max < 0){
-				printf("You inserted a negative number!");
+				printf("Please insert a positive number!");
 			}
 		} while (max < 0);  // the program will ask the user until s/he inserted a positive number
 		         
