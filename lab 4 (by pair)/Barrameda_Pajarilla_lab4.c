@@ -40,13 +40,14 @@ int main(void){
 		//selection sort implementation
 		        
 		for (i = 0 ; i < max - 1 ; i++){
-		    min = i;
-		    for (j = i + 1 ; j < max ; j++){
+		    min = i; // set current element as min
+
+		    for (j = i + 1 ; j < max ; j++){  //check the element to be min
 		        if (array[j] < array[min])
 		        min = j;
 		    }
 		
-		    if (min != i){
+		    if (min != i){          //swapping the min element with the current element
 		        arr = array[i];
 		        array[i] = array [min];
 		        array [min] = arr;
