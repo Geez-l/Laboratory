@@ -95,4 +95,4 @@ int main(void){
 	}
 	while(decision == 'y');  // the program will continue to run until the user wants to
 	
-}.
+}
