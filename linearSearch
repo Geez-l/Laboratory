@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main(){
+    //declares the variables 
+    int A[1000],i, linearSearch,size;
+
+    printf("<----Linear/Sequential Search ---->\n");
+    
+    //prompt user to enter elements in var size
+    printf("\nEnter size of elements:");
+    scanf("%d", &size);
+
+    if (size < 1 ){
+        printf("Invalid Input!");
+    }
+
+    printf("Enter elements:",size);
+
+    for(i=0 ; i < size; i++)
+    scanf("%d",&A[i]);
+
+    printf("Enter element to search: ");
+    scanf("%d",&linearSearch);
+
+    for(i=0 ; i < size; i++){
+        if(A[i] == linearSearch){
+            printf("%d is at index %d",linearSearch,i);
+            break;
+        }
+    }if (i == size)
+        printf("Array has been traversed! Element not found",linearSearch);
+    
+    return 0;
+}
